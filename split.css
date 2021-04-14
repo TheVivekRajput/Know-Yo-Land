@@ -1,0 +1,211 @@
+ @import "footer.css"; 
+ @import "reset.css"; 
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); */
+
+body{
+  background: #076585;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #fff, #076585);  /*Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #fff, #076585); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+/* navbar styling */
+.navbar{
+  background-color: rgba(0, 0, 0, 0.541);
+}
+.navbar-brand{
+  font-size: 110%;
+}
+.active-links{
+  margin-left: 70%;
+}
+.nav-item a:hover{
+  color: rgb(255, 238, 0) !important;
+  transition: 2ms;
+  font-family: 'Blinker', sans-serif;
+}
+/* navbar styling ends */
+
+/*header styling  */
+header{
+  margin-top: 0px;
+  margin-bottom: 40px;
+  background: url(../images/header.jpg) no-repeat center center fixed;
+  background-size: cover;
+  overflow-x: hidden; 
+  padding-top: 0% !important;
+
+}
+/* header styling ends */
+.split {
+    display:flex;
+    height: 100vh;
+    /* width: 100%; */
+    /* position: fixed; */
+    /* position:absolute; */
+    /* z-index: 1; */
+    top: 0%;
+    /* overflow-x: hidden; */
+    /* padding-top: 20px; */
+    margin-top: -3.15%;
+    margin-bottom: -2%;
+    
+  }
+
+  .split-left {
+    width: 50%;  
+    background-color:orangered;
+  }
+  
+  .split-right {
+     width: 50%;
+     background-color:#fcfcfc;
+     
+  }
+  
+  /*.centered { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }*/
+  
+    /* transform: translate(-50%, -50%); */
+    /* text-align: center; */
+   
+
+  
+ /* .centered img {
+    width: 150px;
+    border-radius: 50%;
+  }*/
+ form { 
+  width:60%;
+  margin-left:20%;
+  /* margin-top:50%; */
+  padding-top: 0%;
+  font-family: 'Roboto', sans-serif;
+}
+.form-items{ 
+  /* padding: 5% 10%;  */
+  padding: 0% 0%;
+  background-color: #fcfcfc;
+  border-radius: 1%;
+  margin-top: 10%;
+  margin-bottom:0%;
+}
+
+form .container{
+  margin-bottom: 1%;
+}  
+form .container h1{
+    /* trying 100th line */
+/* padding-top:5%; */
+  font-size: 120%;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+form .dashed{
+  border-top: 1px solid orangered;
+  width: 100%;
+  margin-bottom: 10%;
+  margin-top: 5%;
+  
+}
+form input[type=text]:hover,
+form input[type=password]:hover{
+  border: 1.5px solid orangered;
+}
+form input[type=text],form input[type=password] {
+    width: 100%;
+    padding: 1% 2%;
+    margin: 2% 0%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    float:none;
+    border-radius: 1%;
+  }
+  
+  /*style for all buttons */
+form .container button {
+    background-color:  orangered;
+    color: white;
+    padding: 8px 8px;
+    margin: 10px 1px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    border-radius: 1%;
+  }
+  
+  /* hover effect for buttons */
+form .container button:hover {
+  background-color: rgb(26, 107, 228);
+  }
+  
+  /*For trials*/
+form .flex-container{
+    display:flex;
+    justify-content: center;
+  }
+  form .register{
+    margin-top:25%;
+  }
+form .register h4{
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top:10%;
+  }
+form .flex-container span{
+  margin-right: 5%;
+  margin-left: 2%;
+}  
+form .flex-container a:hover{
+  color: orangered;
+  text-decoration: overline;
+}
+  /* The "Forgot password" text */
+form .container .psw {
+    float: right;
+    padding-top: 1px;
+    padding-bottom: 16px;
+    width: 100%;
+    border-top:8px;
+    margin-top: 1px;
+    color:aqua
+    
+  }
+
+  @media only screen and (max-width: 600px) {
+    .active-links{
+        margin-left: 0%;
+    }
+    form .container button{
+      width: 40%;
+    }
+ 
+    form .container,
+    form .register{
+      font-size: 90%;
+    }
+    form .flex-container{
+      /*display: list-item;
+      list-style-type: none;
+      padding-top: 5%;*/
+      display: block ruby;
+      list-style-type: none;
+      padding-top: 5%;
+      margin-left: -16%;
+    }
+
+    .split .split-left{
+      display:none;
+      
+    }
+    .split-right{
+      width:100%;
+    }
+
+  }
