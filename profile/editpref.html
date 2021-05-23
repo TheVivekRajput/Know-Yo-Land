@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="editpref.css">
+    <title>Profile</title>
+</head>
+<body>
+    <div class="navbars">
+        <div class="vert-nav">
+
+            <div class="icon">
+                <img src="113-1139281_ive-hill-eagles-blue-eagle-transparent-logo.png" alt="icon">
+            </div>
+
+            <div class="nav-head">
+                <i class="fas fa-user-edit"></i>
+                <span>Edit preferences</span> 
+            </div>
+
+            <div class="nav-links">
+                <ul class="list-items">
+                    <!-- <li onclick="fun(0)" class="category cath activecat"> -->
+                        <!-- <i class="fas fa-bars"></i> -->
+                        <!-- <span>Dashboard</span> -->
+                    <!-- </li> -->
+                    <li onclick="fun(0)" class="category cath">
+                        <i class="fas fa-city"></i>
+                        <span>Area</span>
+                    </li>
+                    <li onclick="fun(1)" class="category cath">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <span>Location</span>
+                    </li>
+                    <li onclick="fun(2)" class="category cath">
+                        <i class="fas fa-rupee-sign"></i>
+                        <span>Average Price</span>
+                    </li>
+                    <li onclick="fun(3)" class="category cath">
+                        <i class="fas fa-street-view"></i>
+                        <span>Distance from me</span>
+                    </li>
+                    
+                </ul>
+            </div>
+
+            <div class="vert-line"></div>
+
+            <div class="copywrite">
+                <p>&copy; Know Yo Land 2021.</p>
+            </div>
+
+        </div>
+
+        <div class="hori-nav">
+            <p><i class="fab fa-waze"></i>
+                <span>Hello Admin, Welcome Back</span></p>
+            <ul class="notify">
+                <li>
+                    <i class="far fa-bell"></i>
+                </li>
+                <li>
+                    <a href="#">Logout</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- <div class="dashboard categoryitem cath activecat"> -->
+        <!-- <h2>Your Dashboard</h2> -->
+        
+        <!-- <div class="about-admin"> -->
+
+        <!--   <div class="profile-pic">
+                <img src="profile-pic.jpg" alt="">
+            </div>
+
+            <div class="personal-info">
+                <h1>Admin Name</h1>
+                <h3>User Id</h2>
+            </div>
+
+            <div class="contact-admin">
+                <h3><i class="fas fa-phone"></i> 987654321</h3>
+                <h3><i class="fas fa-envelope"></i> admin@gmail.com</h3>
+                <h4><i class="fas fa-map-marker-alt"></i> 12/1 street, albenia, siberia.</h4>
+            </div>
+
+            <div class="social-media">
+                <ul>
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-linkedin-in"></i></li>
+                </ul>
+                <div class="vert-line"></div>
+                <div class="edit">
+                    <button>Edit Profile</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="preferences">
+            <h2>My Preferences</h2>
+            <div class="preferences-blocks">
+                <div class="area pref">
+
+                    <i class="fas fa-chart-area"></i>
+                    <span>1200 Sqft.</span>
+                </div>
+                <div class="location pref">
+                    <i class="fas fa-search-location"></i>
+                    <span>Delhi</span>
+                </div>
+                <div class="price pref">
+                    <i class="far fa-money-bill-alt"></i>
+                    <span>less than 10Lakhs</span>
+                </div>
+                <div class="distance pref">
+                    <i class="fas fa-road"></i>
+                    <span>less than 20km.</span>
+                </div>
+            </div>
+            <div class="edit">
+                Edit Preferences
+            </div>
+        </div>
+        
+        
+    </div> -->
+    <div class="postland categoryitem cath">
+        <h2>Area</h2>
+        <form action="#" class=form-items>
+        <input type="checkbox" id="below 1k" name="area below 1k">
+        <label for="below 1k">Area below 1000 sq. feet</label><br>
+        <input type="checkbox" id="1k-2k" name="area below 1k">
+        <label for="1k-2k">Area between 1000-2000 sq. feet</label><br>
+        <input type="checkbox" id="2k-3k" name="area below 1k">
+        <label for="2k-3k">Area between 2000-3000 sq. feet</label><br>
+        <input type="checkbox" id="3k-5k" name="area below 1k">
+        <label for="3k-5k">Area between 3000-5000 sq. feet</label><br>
+        <div class="manual">
+            <label for="entry"><b>Enter your preffered area</b></label><br>
+            <input type="text" placeholder="Enter area in sq. ft." name="entry"><br>
+        </div>
+        <div class="save">
+            <button type="submit">Save changes</button>
+            <button type="submit">Cancel</button>
+        </div>
+    </form>
+
+    </div>
+    <div class="buyland categoryitem cath">
+        <h2>Location</h2>
+        <h3>Select state</h3>
+        <select id="inputState"  required>
+            
+            <option selected> States...</option>
+            <option>Andhra Pradesh</option>
+            <option>Arunachal Pradesh</option>
+            <option>Assam</option>
+            <option>Bihar</option>
+            <option>Chhattisgarh</option>
+            <option>Delhi</option>
+            <option>Goa</option>
+            <option>Gujarat</option>
+            <option>Haryana</option>
+            <option>Himachal Pradesh</option>
+            <option>Jammu & Kashmir</option>
+            <option>Jharkhand</option>
+            <option>Karnataka</option>
+            <option>Kerala </option>
+            <option>Madhya Pradesh</option>
+            <option>Manipur</option>
+            <option>Meghalaya</option>    
+            <option>Mizoram</option>    
+            <option>Nagaland</option>    
+            <option>Odisha</option>    
+            <option>Punjab</option>    
+            <option>Rajasthan</option>    
+            <option>Sikkim</option>    
+            <option>Tamil Nadu</option>    
+            <option>Telangana</option>    
+            <option>Tripura</option>    
+            <option>Uttarakhand</option>    
+            <option>Uttar Pradesh</option>    
+            <option>West Bengal</option>    
+            </select>
+
+
+
+    </div>
+    <div class="buyland categoryitem cath">
+        <h2>Average Price</h2>
+        <form action="#" class="form-items">
+            <input type="checkbox" id="below 10L" >
+            <label for="below 10L">Price below 10Lakhs</label><br>
+            <input type="checkbox" id="10L-20L" >
+            <label for="1k-2k">Price between  10Lakhs-20Lakhs</label><br>
+            <input type="checkbox" id="20L-30L" >
+            <label for="2k-3k">Price between  20Lakhs-30Lakhs</label><br>
+            <input type="checkbox" id="30L-50L" >
+            <label for="30L-50L">Price between  30Lakhs-50Lakhs</label><br>
+            <div class="manual">
+                <label for="entry"><b>Enter your preffered price</b></label><br>
+                <input type="text" placeholder="Enter price in Lakhs" name="entry" ><br>
+            </div>
+            <div class="save">
+                <button type="submit">Save changes</button>
+                <button type="submit">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <div class="buyland categoryitem cath">
+        <h2>Distance from me</h2>
+        <form action="#" class="form-items">
+            <input type="checkbox" id="1km" >
+            <label for="1km">Within 1 km</label><br>
+            <input type="checkbox" id="1-5km" >
+            <label for="1-5km">Between 1 km - 5 km</label><br>
+            <input type="checkbox" id="5-15km" >
+            <label for="5-15km">Between 5 km - 15 km</label><br>
+            <input type="checkbox" id="15-25km" >
+            <label for="15-25km">Between 15 km - 25 km</label><br>
+            <div class="manual">
+                <label for="entry"><b>Enter your preffered distance range</b></label><br>
+                <input type="text" placeholder="Enter distance in km" name="entry" ><br>
+            </div>
+            <div class="save">
+                <button type="submit">Save changes</button>
+                <button type="submit">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <!-- <div class="buyland categoryitem cath"> -->
+        <!-- <h2>Customer Support</h2> -->
+    <!-- </div> -->
+    
+</body>
+</html>
+<script src="profile.js"></script>
