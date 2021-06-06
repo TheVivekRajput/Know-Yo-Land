@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <title>Hello, world!</title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/2046a21fca.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="Editpro.css">
+      </head>
+      <body>
+        <div >
+        <header>
+          <div class="topHeader">
+            <div class="leftIcon">
+              <em class="fas fa-align-justify"></em>
+            </div>
+            <div class="Logout">
+              <i class="far fa-bell"></i>
+                <a href="#">Logout</a>
+            </div>
+          </div>
+        </header>
+        
+    <main class="row">
+     
+      <section id="edits">
+      <div >
+        <div class="container-fluid">
+          <div  >
+               <div class="col-md-3 bg-light d-none d-block sidebar" style="background-color:bisque;">
+                  <div class="left-sidebar">
+                    <ul class="nav flex-column">
+                      <li>
+                          <p class="profileP" style="text-align: center;">User Profile</p>
+                      </li>
+                      <li class="nav-item" onclick="change(0)" class="select">
+                          <a class="nav-link active" href="#">Owner</a>
+                      </li>
+                          <li class="nav-item" onclick="change(1)" class="select">
+                          <a class="nav-link active" href="#">Consumer</a>
+                       <li class="copywrite">
+                            <p class="vertline"></p>
+                        <div>&copy; know you land 2021.</p></div>
+                                        
+                            </li>
+                          </ul>
+                          </div>
+                        </div>
+                            
+                        <div >
+                        <div class="contents  remove" id="select">
+                              <section id="owner">
+                                 <div class="row formg" >
+                                    <div  class="fr2">  
+                                        <form method="POST" class="form" >
+                                                  <div class="form-head">
+                                                    <h4 style="text-align: left;font-weight: bolder;">EDIT PROFILE(OWNER)</h4> 
+                                                  </div>
+                                                  <div class="vert-line"></div>
+                                                  <div class="row ">
+                                                    <div class="col-md-6 "><input type="text"  id="First-name" class="form-control input-group input-group-md col-xs-*" placeholder="First name" aria-label="First name" required></div>  
+                                                    <div class="col-md-6"><input type="text"  id="Last-name" class="form-control input-group input-group-md col-xs-*" placeholder="Last name" aria-label="Last name" required></div>
+                                                  </div>
+                                                  <div class="row">
+                                                      <div class="col-md-6"><input type="email" class="form-control" id="inputEmail4" placeholder="Email" required></div>
+                                                      <div class="col-md-6"><input type="text" id="inputUsername" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" required></div>
+                                                    </div>
+                                                  <div class="row">
+                                                      <div class="col-md-6"><input type="password" class="form-control" id="inputPassword4" placeholder="Password" required></div>
+                                                      <div class="col-md-6"><input type="password" class="form-control" id="inputConfirmPassword4p" placeholder="Confirm-Password" required></div>
+                                                  </div>
+                                                  <div class="row"> 
+                                                    <div class="col-md-6"><input type="text" class="form-control" id="inputAddress1" placeholder="1234 Main st (Address1)" required></div>
+                                                    <div class="col-md-6"><input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor(Address2)" required >
+                                                  </div>
+                                                  <div class="row st">
+                                                    <div class="col-md-6" style="padding-left: 4%;width: 103%;">
+                                                      <input type="text" class="form-control city" id="inputCity" aria-placeholder="city" placeholder="city" required>
+                                                    </div>  
+                                                    <div class="col-md-4" style="padding-left: 3%;">
+                                                                  <select id="inputState" class="form-control form-select state" required>
+                                                                    <option selected> States...</option>
+                                                                    <option>Andhra Pradesh</option> 
+                                                                    <option>Arunachal Pradesh</option>
+                                                                    <option>Assam</option>
+                                                                    <option>Bihar</option>
+                                                                    <option>Chhattisgarh</option>
+                                                                    <option>Delhi</option>
+                                                                    <option>Goa</option>
+                                                                    <option>Gujarat</option>
+                                                                    <option>Haryana</option>
+                                                                    <option>Himachal Pradesh</option>
+                                                                    <option>Jammu & Kashmir</option>
+                                                                    <option>Jharkhand</option>
+                                                                    <option>Karnataka</option>
+                                                                    <option>Kerala </option>
+                                                                    <option>Madhya Pradesh</option>
+                                                                    <option>Manipur</option>
+                                                                    <option>Meghalaya</option>    
+                                                                    <option>Mizoram</option>    
+                                                                    <option>Nagaland</option>    
+                                                                    <option>Odisha</option>    
+                                                                    <option>Punjab</option>    
+                                                                    <option>Rajasthan</option>    
+                                                                    <option>Sikkim</option>    
+                                                                    <option>Tamil Nadu</option>    
+                                                                    <option>Telangana</option>    
+                                                                    <option>Tripura</option>    
+                                                                    <option>Uttarakhand</option>    
+                                                                    <option>Uttar Pradesh</option>    
+                                                                    <option>West Bengal</option>    
+                                                                    </select>
+                                                        </div>
+                                                    <div class="col-md-2" style="padding-left: 0.5%;padding-right: 2%;width:300px">
+                                                      <input type="text" class="form-control zip" id="inputZip" placeholder="Zip" required>
+                                                    </div>  
+                                                    </div>
+                                                      <div class="row">
+                                                        <div class="col-md-12" >
+                                                        <input type="tel" id="inputPhone" class="form-control Phone" name="phone" placeholder="Phone(XXX-XXX-XXXX)" pattern="^\d{3}-\d{3}-\d{4}$" required >
+                                                        </div>
+                                                      </div>
+                                                <div class="row">
+                                                  <div class="col-12 " id="butt">
+                                                      <button type="submit" value="submit" class="btn btn-primary btn-signup button" onclick="vld()"  >Save Changes</button>
+    
+                                                  </div>
+                                                </div>
+                                                <div class="vert-line"></div>
+                          </form>
+                        </div> 
+                      </div> 
+                  </section>
+                </div>
+           <div class="margin">
+    
+           </div> 
+    
+    <!-- ----------------------------------------------Next form for consumer---------------------------------------------------------- --> 
+    <div class="remove consumer">
+    <div class="contents" id="select">
+      <section >
+        
+        <div class="row">
+               
+        </div>      
+        <div class="row formg" >
+                <div class="form-group ">  
+                
+                  <form method="POST" class="form" >
+                    <div class="form-head">
+                      <h4 style="text-align: left;font-weight: bolder;">EDIT PROFILE(CONSUMER)</h4> 
+                    </div>
+                    <div class="vert-line"></div>
+                    <div class="row ">
+                      <div class="col-md-6 "><input type="text"  id="First-name" class="form-control input-group input-group-md col-xs-*" placeholder="First name" aria-label="First name" required></div>  
+                      <div class="col-md-6"><input type="text"  id="Last-name" class="form-control input-group input-group-md col-xs-*" placeholder="Last name" aria-label="Last name" required></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6"><input type="email" class="form-control" id="inputEmail4" placeholder="Email" required></div>
+                        <div class="col-md-6"><input type="text" id="inputUsername" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" required></div>
+                      </div>
+                    <div class="row">
+                        <div class="col-md-6"><input type="password" class="form-control" id="inputPassword4" placeholder="Password" required></div>
+                        <div class="col-md-6"><input type="password" class="form-control" id="inputConfirmPassword4p" placeholder="Confirm-Password" required></div>
+                    </div>
+                    <div class="row"> 
+                      <div class="col-md-6"><input type="text" class="form-control" id="inputAddress1" placeholder="1234 Main st (Address1)" required></div>
+                      <div class="col-md-6"><input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor(Address2)" required ></div>
+                      </div>
+                        <div class="row" style="padding-left:1px;">
+                          <div class="col-12">
+                          <input type="tel" id="inputPhone" class="form-control" name="phone" placeholder="Phone(XXX-XXX-XXXX)" pattern="^\d{3}-\d{3}-\d{4}$" required >
+                        </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 " id="butt">
+                            <button type="submit" value="submit" style="border-radius: 20px;" class="btn btn-primary btn-signup2" onclick="vld()"  >Save Changes</button>
+                          </div>
+                      <div class="vert-line"></div>
+                        </div>
+                    </form>
+                </div> 
+              </div> 
+              
+              </section>
+            </div>
+    </div>
+          </div>  
+    
+    
+    
+        </div> 
+      </div>
+      </div>
+    </section>
+      </main>
+    
+    </div>
+        <script src="Eapp.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+        
+      </body>
+    </html>
+    
+    
+      
+        
+      
+   <body
+</html>
